@@ -1,62 +1,129 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8"/>
-    <meta name ="viewport" content="width=device-width"/>
-    <title>Joe Wickes: A Portfolio</title>
-    <link href="style.css" rel="stylesheet" type="text/css"/>
-  </head>
-  
-  <body>
-    <header>
-      <h1>Joe Wickes</h1>
-      <nav>
-        <a href="#intro">Intro</a>
-        <a href="#about-me">About Me</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </header>
-    
-    <main>
-        <!-- Picture of Me -->
-        <img src="images/IMGL8355.jpg" alt="Picture of Joe Wickes"/>
-        
-        <!-- Intro Section -->
-        <article>
-          <p class="intro">Hi! My name is Joe Wickes and I am a web developer in Tampa, Florida.</p>
-        </article>
-        
-        <hr>
-        
-        <!-- About Me Section -->
-        <article>
-          <h2 id="about-me">About Me</h2>
-          <ul>
-            <li>I think that being a web developer is great because I get to be a part of creating 
-                and refining the world's most interconnected resource: the web! I also enjoy getting to
-                work with others so that we can grow and refine each creation together!</li>
-            <li>Outside of developing, I love to spend time with my wife, doing all sorts of things. 
-                We like to watch whatever new movies are coming out, play with our dog, hike, 
-                eat Chipotle, and prepare for the birth of our first baby early next year!</li>
-          </ul>
-        </article>
-        
-        <hr>
-        
-        <!-- Contact Section -->
-        <article>
-          <h2 id="contact">Contact</h2>
-          <p>If you would like to contact me, here are a few good options:</p>
-          <ol>
-            <li><a href="https://www.linkedin.com/in/joseph-w-14943382/">LinkedIn</a></li>
-            <li><a href="https://github.com/joewickes">GitHub</a></li>
-          </ol>
-        </article>
-        
-        
-    </main>
-    <footer>
-        <h3>A page by Joe Wickes</h3>
-    </footer>
-  </body>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Joe Wickes: Portfolio</title>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div>
+            <header>
+                <nav>
+                    <h1>JOE WICKES</h1>
+                    <ul>
+                        <li><a href="#intro">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+        <div>
+            <main>
+                <section class="intro">
+                    <img src="images/portrait.jpg" alt="Picture of Joe Wickes" class="joe-mug">
+                    <div>
+                        <h2>HI! I'M JOE</h2>
+                        <p>I am a full-stack Web Developer in Tampa, Florida. being full-stack means that I work with both 
+                            the front-end (what you can see/interact with) as well as the back-end (servers, data, etc.). 
+                            I build websites and web apps.
+                        </p>
+                    </div>
+                </section>
+
+                <hr>
+
+                <section id="about" class="about">
+                    <img src="images/coffee.jpg" alt="Picture of Coffee">
+                    <div>
+                        <h2>ABOUT ME</h2>
+                        <p>
+                            No other time in history has had such an interconnected world available at its fingertips. 
+                            I think the web is incredible because it provides a platform in which people can imagine, build, 
+                            and refine things together. In my opinion, there is no better place to do that from than as a 
+                            full-stack Web Developer. I think that Web Development is both a skill and an art form.
+                        </p>
+                        <p>
+                            Since the internet is built on interconnectivity, it makes a lot of sense that the teams that 
+                            work on it should do the same. I look forward to the chance to work with other developers so that 
+                            we can bounce ideas off of one another. When one person gets stuck, someone else can step in to
+                            help.
+                        </p>
+                        <p>
+                            Outside of developing, I love to spend time with my family. I am also really into movies, coffee, 
+                            video games, and spending time outdoors. Since I live in Tampa, I like to go to the beach when I 
+                            can. 
+                        </p>
+                        <p>
+                            I am a full-stack Web Developer, which can mean one thing to one person, and a totally different 
+                            thing to another. For me, being a full-stack web developer means that I can totally build a website 
+                            or web app and manage/configure the back-end behind it.
+                        </p>
+                    </div>
+                </section>
+
+                <hr>
+
+                <section id="projects" class="projects">
+                    <h2>PROJECTS</h2>
+                    <div class="all-projects">
+                        <div class="project-1">
+                            <img src="images/beach.jpg" alt="Picture of a beach to stand in for first project picture">
+                            <ul>
+                                <li><a href="">Sample Project 1</a></li>
+                                <li>Sample Description: I'm baby cronut whatever master cleanse mlkshk chambray aesthetic marfa swag thundercats cred semiotics banjo.</li>
+                            </ul>
+                        </div>
+                        <div class="project-2">
+                            <img src="images/mountain.jpg" alt="Picture of a beach to stand in for first project picture">
+                            <ul>
+                                <li><a href="">Sample Project 2</a></li>
+                                <li>Sample Description: Snackwave iceland hashtag copper mug man bun selvage ugh art party mumblecore church-key listicle four dollar toast shaman trust fund wayfarers.</li>
+                            </ul>
+                        </div>
+                        <div class="project-3">
+                            <img src="images/books.jpg" alt="Picture of a beach to stand in for first project picture">
+                            <ul>
+                                <li><a href="">Sample Project 3</a></li>
+                                <li>Sample Description: Glossier normcore XOXO neutra hammock, yr taxidermy iceland hot chicken aesthetic cred.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </section>
+
+                <hr>
+
+                <section id="contact" class="contact">
+                    <div>
+                        <h2>CONTACT ME</h2>
+                        <ol>
+                            <li><a href="https://github.com/joewickes">GitHub</a></li>
+                            <li><a href="#name">Email</a></li>
+                            <li><a href="https://www.linkedin.com/in/joseph-w-14943382/">LinkedIn</a></li>
+                        </ol>
+                        <form action="https://formspree.io/f/mzbkeeql" method="POST">
+                            <label for="name">Your Name:</label>
+                            <input type="text" name="name" id="name" placeholder="Your name here" required>
+                            <label for="email">Your Email:</label>
+                            <input type="email" name="email" id="email" placeholder="Your email here" required>
+                            <label for="message">Message:</label>
+                            <textarea name="message" id="message" placeholder="Your message here" required></textarea>
+                            <button type="submit">Send</button>
+                        </form>
+                    </div>
+                    <img src="images/empty-desk.jpg" alt="Picture of a work desk">
+                </section>
+            </div>
+        </main>
+
+        <footer>
+            <p>A webpage by Joe Wickes</p>
+        </footer>
+    </body>
 </html>

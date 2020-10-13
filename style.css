@@ -1,91 +1,257 @@
 * {
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-/* --- *HEADER/FOOTER* --- */
-
-header, footer {
-    background-color:  #333;
-    color: #fff;
-    text-align: center;
-}
-
-header h1 {
-    padding: 10px;
-}
-
-header a {
-    margin: 10px;
-    padding: 10px;
-}
-
-/* --- Links --- */
-
-header a:link, header a:visited, header a:hover, header a:active {
-    color: #fff;
-}
-
-article a:link, article a:visited, article a:hover, article a:active {
+    padding: 0;
+    margin: 0;
     color: #333;
+    font-family: 'Lato', sans-serif;
 }
 
-a {
+img {
+    width: 100%;
+}
+
+p {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #333;
+    padding: 20px;
+}
+
+header nav h1 {
+    color: #FFF;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #FFF;
+    margin-right: 20px;
+    font-weight: 300;
+}
+
+header nav ul li:last-child a {
+    margin-right: 0;
+}
+
+section {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.intro img {
+    margin-bottom: 20px;
+}
+
+.intro div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.intro div h2 {
+    margin-bottom: 10px;
+}
+
+.about {
+    background-color: #ededed;
+}
+
+.about img {
+    margin-bottom: 20px;;
+}
+
+.about div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about h2 {
+    margin-bottom: 10px;
+}
+
+.about p {
+    margin-bottom: 20px;
+}
+
+.projects {
+    background-color: #333;
+}
+
+.projects h2 {
+    margin-bottom: 30px;
+}
+
+.projects h2, .projects, .projects li, .projects li a {
+    color: #FFF
+}
+
+.projects ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projects img {
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+.projects a {
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.projects li {
+    margin-bottom: 10px;
+    list-style: none;
+    font-weight: 300;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+
+.projects div div {
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact div form {
+    margin-bottom: 30px;;
+}
+
+.contact ol {
+    list-style: none;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.contact ol li a {
     text-decoration: none;
 }
 
-/* --- Nav --- */
+.contact form input, .contact form textarea {
+    width: 100%;
+}
 
-nav {
-    padding-bottom: 10px;;
+footer {
+    background-color: #ededed;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    border-top: 1px solid #333;
+}
+
+footer p {
+    color: #333;
+    font-weight: 300;
 }
 
 
+/* Desktop Response */
 
-/* --- *MAIN* --- */
+@media all and (min-width: 800px) {
+    header nav {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px;
+    }
 
-main {
-    margin: auto;
-    text-align: center;
+    header nav h1 {
+        margin-bottom: 0;;
+    }
+
+    .intro {
+        flex-direction: row-reverse;
+    }
+
+    .intro img {
+        width: 300px;
+        margin-left: 30px;
+    }
+
+    .intro div {
+        align-items: flex-start;
+    }
+
+    .intro div h2 {
+        margin-bottom: 20px;;
+    }
+
+    .about {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .about img {
+        width: 500px;
+        margin-right: 30px;
+    }
+
+    .about div {
+        display: flex;
+        justify-content: center;
+    }
+
+    .about div h2 {
+        margin-bottom: 20px;
+    }
+
+    .all-projects {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .project-1, .project-2, .project-3 {
+        display:flex;
+        flex-direction: column;
+        width: 30%;
+    }
+
+    .projects img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .contact img {
+        width: 300px;
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+    }
 }
-
-h2 {
-    font-size: 25px;
-}
-
-/* --- Intro --- */
-
-.intro {
-    text-align: center;
-}
-
-
-
-/* --- Images --- */
-
-img {
-    height: 400px;
-    margin: auto;
-}
-
-/* --- Text Blocks --- */
-
-article {
-    width: 500px;
-    margin: auto;
-}
-
-article p {
-    text-align: left;
-}
-
-ol {
-    text-align: left;
-}
-
-/* --- Line dividers --- */
-
-hr {
-    width: 500px;
-}
-
