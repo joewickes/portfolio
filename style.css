@@ -123,9 +123,13 @@ header nav ul li:last-child a {
     align-items: center;
 }
 
-.projects img {
+.projects a {
     width: 80%;
     margin-bottom: 10px;
+}
+
+.projects img {
+    width: 100%;
 }
 
 .projects a {
@@ -142,7 +146,7 @@ header nav ul li:last-child a {
 }
 
 
-.projects div div {
+.all-projects div {
     margin-bottom: 40px;
     display: flex;
     flex-direction: column;
@@ -281,7 +285,7 @@ footer p {
         width: 30%;
     }
 
-    .projects img {
+    .projects a img {
         width: 100%;
         margin-bottom: 10px;
     }
