@@ -289,15 +289,14 @@ footer p {
 
 
     /* Contact Section */
-
-
-    .contact img {
-        width: 300px;
-    }
-
+    
     .contact {
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-around;
+    }
+
+    .contact img {
+        width: 300px;
     }
 }
