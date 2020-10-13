@@ -1,3 +1,5 @@
+/* Overarching styles */
+
 * {
     padding: 0;
     margin: 0;
@@ -13,6 +15,17 @@ p {
     text-align: justify;
     text-justify: inter-word;
 }
+
+section {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+/* Header Section */
 
 header nav {
     display: flex;
@@ -44,12 +57,9 @@ header nav ul li:last-child a {
     margin-right: 0;
 }
 
-section {
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+
+
+/* Intro Section */
 
 .intro img {
     margin-bottom: 20px;
@@ -64,6 +74,10 @@ section {
 .intro div h2 {
     margin-bottom: 10px;
 }
+
+
+
+/* About Section */
 
 .about {
     background-color: #ededed;
@@ -86,6 +100,10 @@ section {
 .about p {
     margin-bottom: 20px;
 }
+
+
+
+/* Projects Section */
 
 .projects {
     background-color: #333;
@@ -131,6 +149,10 @@ section {
     align-items: center;
 }
 
+
+
+/* Contact Section */
+
 .contact {
     display: flex;
     flex-direction: column;
@@ -163,6 +185,10 @@ section {
     width: 100%;
 }
 
+
+
+/* Footer Section */
+
 footer {
     background-color: #ededed;
     display: flex;
@@ -180,6 +206,9 @@ footer p {
 /* Desktop Response */
 
 @media all and (min-width: 800px) {
+    
+    /* Header Section */
+
     header nav {
         flex-direction: row;
         justify-content: space-between;
@@ -190,6 +219,10 @@ footer p {
     header nav h1 {
         margin-bottom: 0;;
     }
+
+
+
+    /* Intro Section */
 
     .intro {
         flex-direction: row-reverse;
@@ -207,6 +240,10 @@ footer p {
     .intro div h2 {
         margin-bottom: 20px;;
     }
+
+
+
+    /* About Section */
 
     .about {
         display: flex;
@@ -227,6 +264,10 @@ footer p {
         margin-bottom: 20px;
     }
 
+
+
+    /* Projects Section */
+
     .all-projects {
         display: flex;
         width: 100%;
@@ -244,6 +285,11 @@ footer p {
         width: 100%;
         margin-bottom: 10px;
     }
+
+
+
+    /* Contact Section */
+
 
     .contact img {
         width: 300px;
