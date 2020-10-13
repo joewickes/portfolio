@@ -299,4 +299,8 @@ footer p {
     .contact img {
         width: 300px;
     }
+
+    .contact div {
+        margin-left: 20px;
+    }
 }
