@@ -1,3 +1,8 @@
-This is the Portfolio project for the Thinkful curriculum.
+## My Portfolio
 
-Most recently redone on 10/13/2020
+This is a portfolio made at the beginning of the Thinkful curriculum.
+
+User Requirements
+- Needs to be mobile-first + responsive
+- Needs to have semantic (+ valid) HTML
+- No css styling libraries like Bootstrap
