@@ -111,6 +111,12 @@ header nav ul li:last-child a {
 
 .projects h2 {
     margin-bottom: 30px;
+    text-align: center;
+}
+
+.projects h3 {
+  color: white;
+  padding-bottom: 20px;
 }
 
 .projects h2, .projects, .projects li, .projects li a {
@@ -130,6 +136,8 @@ header nav ul li:last-child a {
 
 .projects img {
     width: 100%;
+    /* border: 1px solid #FFF */
+    box-shadow: 3px 3px 5px black;
 }
 
 .projects a {
